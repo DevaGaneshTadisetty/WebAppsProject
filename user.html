@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background: #8e44ad;
+      color: white;
+      position: fixed;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background: #9b59b6;
+    }
+
+    .main-content {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>User</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Orders</a>
+    <a href="#">Support</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome to User Dashboard</h1>
+
+    <div class="card">
+      <h3>Recent Orders</h3>
+      <p>You have 3 orders in progress.</p>
+    </div>
+
+    <div class="card">
+      <h3>Messages</h3>
+      <p>2 new support messages.</p>
+    </div>
+
+    <div class="card">
+      <h3>Account Status</h3>
+      <p>Your account is active.</p>
+    </div>
+  </div>
+
+</body>
+</html>
